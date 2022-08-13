@@ -28,3 +28,14 @@ ppg2specgram function has the following processing.
 - moving average (30 taps)
 - z-score normalization (mean:47, std:15)
 - spectrogram
+
+# Visualization 
+
+```
+from matplotlib import pyplot as plt
+from ppg_pre import get_ppg_sample
+
+x = get_ppg_sample()
+plt.plot(x[12000:15000])
+```
+![](./assets/ppg.png)
