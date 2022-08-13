@@ -1,7 +1,7 @@
 # ppg
 ppg preprocessing (e.g., ppg> spectogram, bandpass, moving average)
 
-One in ALL: Simple PPG preprocessing 
+ALL in One: Simple PPG preprocessing 
 
 # Usage
 
