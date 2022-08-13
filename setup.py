@@ -14,7 +14,7 @@ with pathlib.Path('requirements.txt').open() as requirements_txt:
 
 setup(
     name="ppg-pre",   # pypi 에 등록할 라이브러리 이름
-    version="0.1",    # pypi 에 등록할 version (수정할 때마다 version up을 해줘야 함)
+    version="0.1.2",    # pypi 에 등록할 version (수정할 때마다 version up을 해줘야 함)
     
     description="Simple PPG preprocessing",
     author="epsilon (nickN: kokomong)",
@@ -25,6 +25,8 @@ setup(
     python_requires=">= 3.7",
     packages=find_packages(),
     install_requires=install_requires,
+    
+    include_package_data=True
 
     # 중요한 부분
     # entry_points={
