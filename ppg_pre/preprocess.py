@@ -34,13 +34,13 @@ def get_scalogram(x):
     pass
 
 # ==== end2end ======
-def ppg2specgram(x: np.numpy,sample_rate= 300):
+def ppg2specgram(x: np.array,sample_rate= 300):
     
     x = interpolate(x)
     x = bandpass(x, band=[0.5,10],sample_rate=sample_rate)
     x = moving_average(x,w=30)
     x = norm_z(x)
-    f, t, xspec = get_spectrogram(x,fs=sample_rate)
+    xspec = get_spectrogram(x,fs=sample_rate)
     return xspec
     
     
